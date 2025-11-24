@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="register active" id="register-section">
+        <div class="register-container">
+            <div class="register-box">
+                <h1 dir="rtl">أهلا بك!</h1>
+                <p dir="rtl">أنشأ حسابك الآن !</p>
+                <div class="inputs">
+                    <input class="input" type="text" placeholder="الإسم" required>
+                    <input class="input" type="email" placeholder="البريد الإلكترونى" required>
+                    <div class="password-field">
+                        <input class="input" id="password" type="password" placeholder="كلمة المرور" required>
+                        <i class="fa-solid fa-eye toggle-pass" onclick="togglePassword('password', this)"></i>
+                    </div>
+                    <div class="password-field">
+                        <input class="input" id="password2" type="password" placeholder="تأكيد كلمة المرور" required>
+                        <i class="fa-solid fa-eye toggle-pass" onclick="togglePassword('password2', this)"></i>
+                    </div>
+                </div>
+                <div class="check">
+                    <div class="check-age">
+                        <label dir="rtl" for="age">عمري 13 أو أكبر .</label>
+                        <input class="check-box" type="checkbox" id="age">
+                    </div>
+                    <div class="check-privacy">
+                        <label dir="rtl" for="privacy">أوافق علي شروط <a href="#">الإستخدام</a> .</label>
+                        <input class="check-box" type="checkbox" id="privacy">
+                    </div>
+                </div>
+                <button id="register" class="register-button">إنشاء حساب</button>
+                <div class="other">
+                    <span></span>
+                    <h4>أو</h4>
+                    <span></span>
+                </div>
+                <div class="other-method">
+                    <button dir="rtl">سجل عبر جوجل <i class="fa-brands fa-google"></i></button>
+                    <button dir="rtl">سجل عبر فيسبوك <i class="fa-brands fa-facebook-f"></i></i></button>
+                </div>
+                <div class="have-acc" id="go-to-login"><a href="#">لديك حساب بالفعل؟</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login" id="login-section">
+        <div class="login-container">
+            <div class="login-box">
+                <h1 dir="rtl">مرحباً بك مجدداً !</h1>
+                <p dir="rtl">سجل دخول الآن !</p>
+                <div class="login-inputs">
+                    <input type="email" placeholder="البريد الإلكترونى" required>
+                    <div class="password-field">
+                        <input class="input" id="password3" type="password" placeholder="كلمة المرور" required>
+                        <i class="fa-solid fa-eye toggle-pass" onclick="togglePassword('password3', this)"></i>
+                    </div>
+                </div>
+                <div class="login-check">
+                    <div class="remember-me">
+                        <label for="remember">تذكرنى</label>
+                        <input type="checkbox" id="remember" class="remember-box">
+                    </div>
+                    <div class="password-forgotten"><a href="#">هل نسيت كلمة المرور؟</a></div>
+                </div>
+                <button class="login-button">تسجيل الدخول</button>
+                <div class="doesnot-have-acc" id="go-to-register">ليس لديك حساب؟ <a href="#">أنشأ الآن</a></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

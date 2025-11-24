@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #09090b;
+}
+
+.register-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    background-color: #0F0F12;
+    min-height: 600px;
+    border-radius: 30px;
+    height: auto;
+}
+
+.register-box h1 {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.register-box p {
+    background: linear-gradient(175deg, #e7e7fc, #535671);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 80%;
+}
+
+.input {
+    width: 100%;
+    background-color: #1C1C22;
+    border: 1px solid #27272e;
+    border-radius: 10px;
+    padding: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+    color: #fff;
+}
+
+.input::placeholder {
+    font-weight: 800;
+}
+
+.input:hover {
+    background-color: #25252d;
+}
+
+.input:focus {
+    background-color: #25252d;
+    outline: none;
+}
+
+.register-button {
+    background-color: #fff;
+    color: #09090b;
+    width: 80%;
+    padding: 1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+    margin-top: 15px;
+}
+
+label {
+    color: #fff;
+}
+
+.check-age,
+.check-privacy {
+    display: flex;
+    align-items: center;
+}
+
+.check-box {
+    appearance: none;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-box:checked {
+    background-color: #25252d;
+}
+
+.check-box:checked::after {
+    content: "✔";
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+}
+
+.check-privacy a {
+    color: #e7e7fc;
+}
+
+.other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.register-box span {
+    height: 0.5px;
+    width: 45%;
+    background-color: #9CA3AF;
+    opacity: 0.3;
+    border-radius: 15px;
+}
+
+.other h4 {
+    color: #787c83;
+    font-weight: 300;
+}
+
+.other-method {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+.other-method button {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    font-weight: 800;
+    border: 1px solid #27272e;
+    color: #fff;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.other-method i {
+    margin-right: 3px;
+}
+
+.have-acc {
+    margin-bottom: 20px;
+}
+
+.have-acc a {
+    text-decoration: none;
+    color: #60A5FA;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field .input {
+    width: 100%;
+    padding-left: 2.5rem;
+}
+
+.password-field .fa-eye {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ffffffcc;
+    cursor: pointer;
+}
+
+.toggle-pass {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ffffffcc;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.toggle-pass:hover {
+    color: #fff;
+}
+
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0F0F12;
+    width: 450px;
+    min-height: 350px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.login-box h1 {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.login-box p {
+    background: linear-gradient(175deg, #e7e7fc, #535671);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80%;
+}
+
+.login-inputs input {
+    width: 100%;
+    background-color: #1C1C22;
+    border: 1px solid #27272e;
+    border-radius: 10px;
+    padding: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+    color: #fff;
+}
+
+.login-inputs input::placeholder {
+    font-weight: 800;
+}
+
+.login-inputs input:hover {
+    background-color: #25252d;
+}
+
+.login-inputs input:focus {
+    outline: none;
+    background-color: #25252d;
+}
+
+.login-check {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-box {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remember-box:checked {
+    background-color: #25252d;
+}
+
+.remember-box:checked::after {
+    content: "✔";
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+}
+
+.password-forgotten a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+.login-button {
+    background-color: #fff;
+    color: #09090b;
+    font-weight: 800;
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.doesnot-have-acc {
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.doesnot-have-acc a {
+    color: #60A5FA;
+    text-decoration: none;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 100%;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+section.active {
+    opacity: 1;
+    pointer-events: auto;
+}
