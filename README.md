@@ -15,3 +15,8 @@ Feel free to check it out and give feedback!
 ## Login Page Preview
 
 ![Login Page Preview](login.png)
+
+
+## Register Page Preview
+
+![Register Page Preview](register.png)
