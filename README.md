@@ -11,3 +11,7 @@ The goal of this project was to get hands-on experience with:
 This is a simple project, mainly for learning purposes, and I plan to keep improving my skills and building more advanced front-end projects in the future.  
 
 Feel free to check it out and give feedback!
+
+## Login Page Preview
+
+![Login Page Preview](login.png)
